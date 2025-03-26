@@ -76,8 +76,10 @@ def check_voting_eligibility():
         print('Invalid age')
     elif user_age < voting_age and user_age > 0:
         print('User cannot vote')
-    else:
+    elif user_age >= voting_age:
         print('User can vote')
+    else:
+        print('invalid age')
 
 
 # Call the function
@@ -112,6 +114,8 @@ def calculate_dog_years():
         print(f'Your pup is {user_input * 10}' )
     elif user_input > 2:
         print(f'your pup is {20 + (user_input - 2) * 7}' )
+    else:
+        print('invalid pup age')
 
 
 # Call the function
@@ -145,8 +149,10 @@ def weather_advice():
         print('wear a warm coat')
     elif is_cold == 'no' and is_raining == 'yes':
         print('carry an umbrella')
-    else: 
+    elif is_cold == 'no' and is_raining == 'no': 
         print('wear light clothing')
+    else:
+        print('invalid response')
         
 
 
